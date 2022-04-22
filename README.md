@@ -1,2 +1,5 @@
 # backend
 backend built in spring to fetch api stock data
+In this project, we are creating an endpoint to fetch the api data so we can display it as a graph using reactjs. 
+The Rest Service code is to run our application. To run the Tomcat on our port so we can access our api through a web browser. 
+In the StockController code, we are using a decorator to initializa a variable that holds are API Key then another one for the url of our api but we are appending the api key variable to the string and then we are creating a a route so we can render the data that we are about to fetch data using a try and catch methods. If for some reason the api url isnt working the page will render an error code  and an error status code else it will render the json objects from the api and return a status code of ok. The whole point of this project is to create an endpoint that will return json objects from a certain stock in this case IBM and so we can use it for the next part of the project which is to hook it up to a front end to generate a graph. 
